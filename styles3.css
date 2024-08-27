@@ -1,0 +1,98 @@
+/* Apply a reset to all elements */
+* {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+  font-family: Arial; /* Use Arial font for all elements */
+}
+
+/* Ensure the body and html elements cover the full height of the viewport */
+body,
+html {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  height: 100%; /* Full height of the viewport */
+  font-family: Arial; /* Use Arial font for body and html */
+}
+
+/* Style the navigation bar */
+.navbar {
+  background-color: white; /* White background color for the navbar */
+  padding: 20px; /* Padding around navbar content */
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+  margin: 20px auto; /* Center horizontally with vertical margin */
+  width: 100%; /* Full width of the container */
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-around; /* Distribute items evenly */
+  align-items: center; /* Center items vertically */
+}
+
+/* Style for the navigation menu within the navbar */
+.nav-menu {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center items vertically */
+  justify-content: space-around; /* Distribute items evenly */
+  width: 100%; /* Full width of the navbar */
+}
+
+/* Style for individual navigation items */
+.nav-item {
+  color: #000; /* Black text color */
+  font-size: 18px; /* Font size of 18px */
+  cursor: pointer; /* Pointer cursor on hover */
+  padding: 10px 20px; /* Padding inside navigation items */
+  border-radius: 10px; /* Rounded corners */
+  text-decoration: none; /* Remove underline from links */
+}
+
+/* Hover effect and active state for navigation items */
+.nav-item:hover,
+.nav-item.home.active {
+  color: #ff3c3c; /* Red text color on hover or when active */
+  font-weight: bold; /* Bold text on hover or when active */
+}
+
+/* Style for home icon in the navbar */
+.home-icon {
+  width: 50px; /* Width of the home icon */
+  height: 50px; /* Height of the home icon */
+}
+
+/* Background styling for the body */
+body {
+  background-size: cover; /* Cover the entire body with background image */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Do not repeat the background image */
+  animation: changeBackground 9s infinite; /* Apply background image change animation */
+  animation-timing-function: ease-in-out; /* Smooth animation timing */
+}
+
+/* Keyframes for background image change animation */
+@keyframes changeBackground {
+  0% {
+    opacity: 0;
+    background-image: url("https://danhgiamay.com/wp-content/uploads/2020/08/bia-ha-noi-co-bao-nhieu-do.jpg");
+  } /* Start with the first background image and hide it */
+  10% {
+    opacity: 1;
+  } /* Fade in the first background image */
+  33% {
+    opacity: 1;
+    background-image: url("https://thucphamantoan.net/wp-content/uploads/2023/07/sab-1-2855.jpeg");
+  } /* Switch to the second background image */
+  43% {
+    opacity: 0;
+  } /* Fade out the second background image */
+  66% {
+    opacity: 1;
+    background-image: url("https://img.websosanh.vn/v10/users/review/images/fmdmay54coi5j/1550121308933_4804520.jpg?compress=85");
+  } /* Switch to the third background image */
+  76% {
+    opacity: 0;
+  } /* Fade out the third background image */
+  100% {
+    opacity: 1;
+    background-image: url("https://danhgiamay.com/wp-content/uploads/2020/08/bia-ha-noi-co-bao-nhieu-do.jpg");
+  } /* Return to the first background image */
+}

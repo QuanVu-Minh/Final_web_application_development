@@ -1,0 +1,16 @@
+@media screen and (max-width: 640px) {
+    .main-container {
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+    }
+
+    .main-content,
+    .as {
+        width: 100%; /* Ensure these elements take up the full width of the container */
+    }
+    
+    .avatar, 
+    .nav-item {
+        font-size: 14px; /* Reduce font size for better fit on mobile */
+    }
+}

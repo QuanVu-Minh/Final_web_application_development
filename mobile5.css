@@ -1,0 +1,37 @@
+@media screen and (max-width: 640px) {
+    /* Ensure font size and padding for navigation items on mobile */
+    .nav-item {
+        font-size: 16px; /* Reduce font size for mobile devices */
+        padding: 8px 16px; /* Adjust padding for smaller screens */
+    }
+
+    /* Adjust grid layout for products */
+    .product-grid {
+        display: flex;
+        flex-direction: column; /* Stack products vertically */
+        align-items: center; /* Center align products */
+        gap: 20px;
+        padding: 20px; /* Adjust padding for small screens */
+    }
+
+    .product-item {
+        width: 90%; /* Set item width to fit screen */
+        max-width: 300px; /* Limit maximum width */
+        text-align: center; /* Center text */
+    }
+
+    .product-item img {
+        width: 100%; /* Ensure image fits the item width */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 15px;
+    }
+
+    .product-name {
+        background-color: #ff3c3c;
+        padding: 10px;
+        border-radius: 10px;
+        color: #fff;
+        font-size: 16px; /* Reduce font size for mobile */
+        font-weight: bold;
+    }
+}

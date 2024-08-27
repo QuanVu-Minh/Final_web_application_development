@@ -1,0 +1,61 @@
+@media screen and (min-width: 1024px) {
+    
+    /* Style the product grid to be a flex container with centered items and gaps */
+    .product-grid {
+        display: flex; /* Use flexbox layout */
+        justify-content: center; /* Center items horizontally */
+        gap: 20px; /* Space between items */
+        padding: 40px 20px; /* Padding inside the grid */
+    }
+
+    /* Set a maximum width for the navbar on larger screens, and align its items */
+    .navbar {
+        max-width: 2000px; /* Ensure maximum horizontal size */
+        display: flex; /* Use flexbox layout */
+        justify-content: space-around; /* Distribute items evenly */
+        align-items: center; /* Center items vertically */
+    }
+
+    /* Increase font size for navigation items on larger screens */
+    .nav-item {
+        font-size: 25px; /* Larger font size for navigation items */
+    }
+
+    /* Style each product item with background, padding, and box shadow */
+    .product-item {
+        background-color: #fff; /* White background color */
+        border-radius: 20px; /* Rounded corners */
+        padding: 20px; /* Padding inside each product item */
+        text-align: center; /* Center align text */
+        width: 200px; /* Set width of product item */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    }
+    
+    /* Style the product images within each product item */
+    .product-item img {
+        width: 100%; /* Full width image */
+        border-radius: 15px; /* Rounded corners */
+        margin-bottom: 15px; /* Space below the image */
+    }
+
+    /* Add hover effect for product images */
+    .product-item img:hover {
+        border-radius: 17px; /* Slightly more rounded corners on hover */
+        margin-bottom: 17px; /* Slightly larger space below the image on hover */
+    }
+
+    /* Style the product name with background, padding, and font properties */
+    .product-name {
+        background-color: #ff3c3c; /* Red background color */
+        padding: 10px; /* Padding inside the product name element */
+        border-radius: 10px; /* Rounded corners */
+        color: #fff; /* White text color */
+        font-weight: bold; /* Bold font weight */
+    }
+
+    /* Set width and height for the home icon on larger screens */
+    .home-icon {
+        width: 100px; /* Width of the home icon */
+        height: 100px; /* Height of the home icon */
+    }
+}

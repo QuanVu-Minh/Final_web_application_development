@@ -1,0 +1,31 @@
+@media screen and (min-width: 1024px) {
+
+    /* Add padding to the top, left, and right of the content container */
+    .content {
+        padding-top: 100px; /* Padding at the top */
+        padding-left: 40px; /* Padding on the left */
+        padding-right: 40px; /* Padding on the right */
+    }
+
+    /* Set the width of the section elements */
+    .section {
+        width: 45%; /* Width set to 45% */
+    }
+
+    /* Increase font size for navigation items on larger screens */
+    .nav-item {
+        font-size: 25px; /* Larger font size for navigation items */
+    }
+
+    /* Style the product list to arrange items in a column and align them to the start */
+    .product-list {
+        flex-direction: column; /* Arrange items in a column */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    /* Set width and height for the home icon on larger screens */
+    .home-icon {
+        width: 100px; /* Width of the home icon */
+        height: 100px; /* Height of the home icon */
+    }
+}

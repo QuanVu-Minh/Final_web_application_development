@@ -1,0 +1,201 @@
+/* Apply styles for screens that are at least 1024px wide */
+@media screen and (min-width: 1024px) {
+  /* Set a maximum width for the navbar and center it with margin */
+  .navbar {
+    max-width: 100%; /* Maximum width of the navbar */
+    margin: 20px auto; /* Center the navbar with top/bottom margin */
+    height: 167px;
+  }
+
+  /* Style navigation items with larger font size and padding */
+  .nav-item {
+    font-size: 25px; /* Font size for navigation items */
+    padding: 10px 20px; /* Padding inside navigation items */
+    text-decoration: none;
+  }
+
+  /* Set width and height for the home icon on larger screens */
+  .home-icon {
+    width: 100px; /* Width of the home icon */
+    height: 100px; /* Height of the home icon */
+  }
+
+  /* Style paragraph text within the content area with larger font size */
+  .content p {
+    font-size: 24px; /* Font size for paragraph text */
+  }
+}
+
+/* Bố cục chính */
+.form-body {
+  max-width: 100%; /* Sử dụng 100% chiều rộng của màn hình cha */
+  margin: 5%;
+  display: flex;
+  justify-content: center; /* Căn giữa các phần tử con */
+  flex-wrap: wrap; /* Cho phép các phần tử con xuống dòng khi không đủ không gian */
+  gap: 20px; /* Thêm khoảng cách giữa các phần tử con */
+}
+
+/* Container cho form */
+.form-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px; /* Giới hạn chiều rộng tối đa */
+  box-sizing: border-box; /* Đảm bảo padding không làm tăng kích thước tổng thể */
+  margin: 0 auto; /* Căn giữa container trong không gian cha */
+}
+
+/* Tiêu đề form */
+.title-form {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-weight: 700;
+  color: black;
+}
+
+/* Định dạng label */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 0.8rem;
+  color: black;
+}
+
+/* Định dạng các trường input */
+input[type="text"],
+input[id="email"],
+input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background-color: rgb(241, 239, 235);
+  border: 1px solid black;
+  outline: none;
+  box-sizing: border-box; /* Đảm bảo padding không làm tăng kích thước tổng thể */
+}
+
+input.error {
+  border: 1px solid red;
+  background-color: #fdd;
+}
+
+/* Định dạng thông báo lỗi */
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+/* Định dạng nút submit */
+.btn-submit {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  box-sizing: border-box; /* Đảm bảo padding không làm tăng kích thước tổng thể */
+}
+
+/* Hiệu ứng hover cho nút submit */
+.btn-submit:hover,
+.btn-submit:focus {
+  background-color: #45a049;
+  outline: none;
+  border: none;
+}
+
+/* Định dạng carousel */
+.carousel {
+  width: 100%;
+  max-width: 800px; /* Giới hạn chiều rộng tối đa */
+  height: auto;
+}
+
+/* Định dạng hình ảnh trong carousel */
+.d-block {
+  border-radius: 4%;
+  width: 100%;
+  height: auto;
+  max-height: 520px; /* Giới hạn chiều cao tối đa */
+}
+
+/* Định dạng carousel inner */
+.carousel-inner {
+  border-radius: 4% !important;
+}
+
+/* Định dạng thông báo lỗi */
+#errorMessage {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: white;
+  color: red;
+  font-size: 16px;
+  border-radius: 10px;
+  z-index: 1000;
+  max-width: 300px;
+  text-align: center;
+}
+
+/* Định dạng danh sách lỗi */
+#errorMessage ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+#errorMessage ul li {
+  margin-bottom: 5px;
+}
+
+/* Media Queries cho màn hình nhỏ hơn */
+@media (max-width: 1024px) {
+  .form-body {
+    padding: 0; /* Loại bỏ padding để tránh tràn nội dung */
+  }
+
+  .form-container {
+    width: 100%; /* Chiếm 100% chiều rộng màn hình */
+    max-width: 90%; /* Đảm bảo container không tràn ra ngoài */
+    margin: 0 auto; /* Căn giữa container */
+  }
+
+  .title-form {
+    font-size: 10px; /* Điều chỉnh kích thước chữ cho màn hình nhỏ hơn */
+  }
+}
+
+@media (max-width: 768px) {
+  .form-body {
+    flex-direction: column; /* Sắp xếp theo cột trên màn hình nhỏ */
+    align-items: center; /* Căn giữa các phần tử con */
+    gap: 10px; /* Giảm khoảng cách giữa các phần tử trên màn hình nhỏ */
+  }
+
+  .form-container {
+    width: 90%; /* Chiếm 90% chiều rộng màn hình trên thiết bị nhỏ */
+  }
+
+  .carousel {
+    width: 100%;
+    max-width: 100%; /* Đảm bảo carousel chiếm 100% chiều rộng */
+  }
+
+  .d-block {
+    max-height: 1200px; /* Giới hạn chiều cao cho màn hình nhỏ hơn */
+  }
+}

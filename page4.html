@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"> <!-- Set character encoding to UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ensure proper scaling on mobile devices -->
+    <title>Webpage with Hover Effect</title> <!-- Set the title of the webpage -->
+
+    <!-- Link to the main CSS file for general styles -->
+    <link rel="stylesheet" href="styles4.css">
+
+    <!-- Link to the CSS file for desktop-specific styles, applied when screen width is 1024px or wider -->
+    <link rel="stylesheet" href="desktop4.css" media="(min-width: 1024px)">
+
+    <!-- Link to the CSS file for mobile-specific styles, applied when screen width is 640px or narrower -->
+    <link rel="stylesheet" href="mobile4.css" media="(max-width: 640px)">
+</head>
+
+<body>
+    <!-- Navigation bar containing menu items -->
+    <nav class="navbar">
+        <div class="nav-menu">
+            <!-- Navigation item for the home page, styled as active -->
+            <div class="nav-item home active">
+                <a href="page3.html">
+                    <!-- Home icon image linked to the home page -->
+                    <img src="home_icon.jpg" alt="Home" class="home-icon">
+                </a>
+            </div>
+            <!-- Navigation links to other pages, with 'active' class on the current page -->
+            <a href="page4.html" class="nav-item active">Thông tin</a> <!-- Link to Information page -->
+            <a href="page5.html" class="nav-item">Thương hiệu</a> <!-- Link to Brand page -->
+            <a href="page6.html" class="nav-item">Sản phẩm</a> <!-- Link to Products page -->
+            <a href="page7.html" class="nav-item">Mua hàng</a> <!-- Link to Recruitment page -->
+        </div>
+    </nav>
+
+    <!-- Main container for primary content -->
+    <div class="main-container">
+        <!-- Main content area -->
+        <main class="main-content">
+            <!-- Container for avatar images and descriptions -->
+            <div class="avatar-container">
+                <!-- Avatar 1 with image and description -->
+                <div class="avatar">
+                    <img src="Phuong.jpg" alt="Avatar 1">
+                    <p>Đặng Trần Phương, Founder</p>
+                </div>
+                <!-- Avatar 2 with image and description -->
+                <div class="avatar">
+                    <img src="Quan.jpg" alt="Avatar 2">
+                    <p>Vũ Minh Quân, Co-founder</p>
+                </div>
+            </div>
+        </main>
+
+        <!-- Sidebar or additional content area -->
+        <aside class="as">
+            <!-- First block of text content -->
+            <div>
+                "Chúng tôi cam kết mang đến cho khách hàng những sản phẩm chính hãng, đảm bảo chất lượng và nguồn gốc rõ
+                ràng. Hệ thống phân phối rộng khắp giúp chúng tôi đáp ứng nhu cầu của khách hàng một cách nhanh chóng và
+                hiệu quả."
+            </div>
+            <br> <!-- Line break for spacing -->
+            <!-- Second block of text content -->
+            <div>
+                "Đội ngũ nhân viên giàu kinh nghiệm của chúng tôi luôn sẵn sàng tư vấn và hỗ trợ khách hàng trong việc
+                lựa chọn sản phẩm, cũng như giải đáp mọi thắc mắc."
+            </div>
+        </aside>
+    </div>
+</body>
+
+</html>

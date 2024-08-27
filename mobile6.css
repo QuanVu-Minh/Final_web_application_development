@@ -1,0 +1,29 @@
+@media screen and (max-width: 640px) {
+    .content {
+        padding-top: 60px; /* Ensure spacing from the top */
+        padding-left: 10px; /* Adjust left padding */
+        padding-right: 10px; /* Adjust right padding */
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center align content */
+    }
+
+    .section {
+        width: 90%; /* Ensure section fits well within the screen */
+        margin-bottom: 20px; /* Add space below sections */
+    }
+
+    .product-item {
+        flex-direction: column; /* Stack product items vertically */
+        align-items: center; /* Center align product items */
+    }
+
+    .product-item img {
+        width: 100%; /* Make images responsive to container width */
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: 10px; /* Space between image and text */
+    }
+
+    .product-item p {
+        font-size: 16px; /* Adjust font size for readability on smaller screens */
+    }
+}

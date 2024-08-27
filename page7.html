@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8"> <!-- Set character encoding to UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Ensure proper scaling on mobile devices -->
+  <title>Recruitment Information</title> <!-- Set the title of the webpage -->
+
+  <!-- Link to the main CSS file for general styles -->
+  <link rel="stylesheet" href="styles7.css">
+
+  <!-- Link to the CSS file for desktop-specific styles, applied when screen width is 1024px or wider -->
+  <link rel="stylesheet" href="desktop7.css" media="screen and (min-width: 1024px)">
+
+  <!-- Link to the CSS file for mobile-specific styles, applied when screen width is 640px or narrower -->
+  <link rel="stylesheet" href="mobile7.css" media="screen and (max-width: 640px)">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+</head>
+
+<body>
+  <!-- Navigation bar containing menu items -->
+  <nav class="navbar">
+    <div class="nav-menu">
+      <!-- Navigation item for the home page with an icon -->
+      <a href="page3.html" class="nav-item home">
+        <img src="home_icon.jpg" alt="Home" class="home-icon">
+      </a>
+      <!-- Navigation links to other pages, with 'active' class on the current page -->
+      <a href="page4.html" class="nav-item">Thông tin</a> <!-- Link to Information page -->
+      <a href="page5.html" class="nav-item">Thương hiệu</a> <!-- Link to Brand page -->
+      <a href="page6.html" class="nav-item">Sản phẩm</a> <!-- Link to Products page -->
+      <a href="page7.html" class="nav-item active">Mua hàng</a>
+      <!-- Link to Recruitment page, currently active -->
+    </div>
+  </nav>
+  <div class="form-body">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="1500">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="./images/44863385428e63325645e4030a969979.png" alt="Bear">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="./images/74416ed688400ef718b4da7c1c94cb31.jpg" alt="Bear">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="./images/867e672f42ec22d6d3c340213ceff2b7.jpg" alt="Bear">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="./images/BHN-VANG-TET-3-600x600.jpg" alt="Bear">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="./images/BHN-XANH-TET-1-600x600.png" alt="Bear">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="./images/Bia-Sai-gon-Special-330ml-600x600.jpg" alt="Bear">
+        </div>
+      </div>
+    </div>
+
+    <div class="form-container">
+      <h2 class="title-form">Hãy cho tôi thông tin của bạn để có thể liên hệ dễ dàng hơn!</h2>
+
+      <form id="contactForm">
+        <label for="name">Họ và tên:</label>
+        <input type="text" id="name" name="name">
+
+        <label for="email">Gmail:</label>
+        <input id="email" name="email">
+
+        <label for="phone">SĐT:</label>
+        <input type="tel" id="phone" name="phone">
+
+        <label for="address">Địa chỉ:</label>
+        <input type="text" id="address" name="address">
+
+        <button class="btn-submit" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Div hiển thị thông báo lỗi -->
+  <div id="errorMessage"></div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="./scripts/handleForm.js"></script>
+</body>
+
+</html>

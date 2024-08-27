@@ -1,0 +1,257 @@
+/* Apply a reset to all elements */
+* {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+  font-family: Arial, sans-serif; /* Use Arial font or fall back to sans-serif */
+}
+
+/* Style the body with a gradient background and white text */
+body {
+  background: linear-gradient(
+    90deg,
+    #002f8d,
+    #a018b6
+  ); /* Gradient background from blue to purple */
+  color: #fff; /* White text color */
+}
+
+/* Style the home icon */
+.home-icon {
+  width: 100px; /* Width of the home icon */
+  height: 100px; /* Height of the home icon */
+}
+
+/* Style the navigation bar */
+.navbar {
+  background-color: white; /* White background color for the navbar */
+  padding: 20px; /* Padding around navbar content */
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+  margin: 20px auto; /* Center horizontally with vertical margin */
+  max-width: 100%; /* Maximum width of 1200px */
+  height: 167px;
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-around; /* Distribute items evenly */
+  align-items: center; /* Center items vertically */
+}
+
+/* Style the navigation menu within the navbar */
+.nav-menu {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center items vertically */
+  justify-content: space-around; /* Distribute items evenly */
+  width: 100%; /* Full width of the navbar */
+}
+
+/* Style for individual navigation items */
+.nav-item {
+  color: #000; /* Black text color */
+  font-size: 25px; /* Font size of 18px */
+  cursor: pointer; /* Pointer cursor on hover */
+  padding: 10px 20px; /* Padding inside navigation items */
+  border-radius: 10px; /* Rounded corners */
+  text-decoration: none; /* Remove underline from links */
+  text-decoration: none;
+}
+
+/* Hover effect and active state for navigation items */
+.nav-item:hover,
+.nav-item.active {
+  font-size: 25px;
+  color: #ff3c3c; /* Red text color on hover or when active */
+  font-weight: bold; /* Bold text on hover or when active */
+  text-decoration: none;
+}
+
+/* Style the content area */
+.content {
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  flex-direction: column; /* Stack items vertically */
+  height: 100vh; /* Full viewport height */
+  padding-top: 60px; /* Padding on top to account for the navbar */
+  text-align: center; /* Center align text */
+}
+
+/* Style for paragraphs within the content */
+.content p {
+  font-size: 24px; /* Font size of 24px */
+  color: white; /* White text color */
+  margin: 10px 0; /* Vertical margin of 10px */
+}
+
+/* Bố cục chính */
+.form-body {
+  max-width: 100%; /* Sử dụng 100% chiều rộng của màn hình cha */
+  margin: 5%;
+  display: flex;
+  justify-content: center; /* Căn giữa các phần tử con */
+  flex-wrap: wrap; /* Cho phép các phần tử con xuống dòng khi không đủ không gian */
+  gap: 20px; /* Thêm khoảng cách giữa các phần tử con */
+}
+
+/* Container cho form */
+.form-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px; /* Giới hạn chiều rộng tối đa */
+  box-sizing: border-box; /* Đảm bảo padding không làm tăng kích thước tổng thể */
+  margin: 0 auto; /* Căn giữa container trong không gian cha */
+}
+
+/* Tiêu đề form */
+.title-form {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-weight: 700;
+  color: black;
+}
+
+/* Định dạng label */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 0.8rem;
+  color: black;
+}
+
+/* Định dạng các trường input */
+input[type="text"],
+input[id="email"],
+input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background-color: rgb(241, 239, 235);
+  border: 1px solid black;
+  outline: none;
+  box-sizing: border-box; /* Đảm bảo padding không làm tăng kích thước tổng thể */
+}
+
+input.error {
+  border: 1px solid red;
+  background-color: #fdd;
+}
+
+/* Định dạng thông báo lỗi */
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+/* Định dạng nút submit */
+.btn-submit {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  box-sizing: border-box; /* Đảm bảo padding không làm tăng kích thước tổng thể */
+}
+
+/* Hiệu ứng hover cho nút submit */
+.btn-submit:hover,
+.btn-submit:focus {
+  background-color: #45a049;
+  outline: none;
+  border: none;
+}
+
+/* Định dạng carousel */
+.carousel {
+  width: 100%;
+  max-width: 800px; /* Giới hạn chiều rộng tối đa */
+  height: auto;
+}
+
+/* Định dạng hình ảnh trong carousel */
+.d-block {
+  border-radius: 4%;
+  width: 100%;
+  height: auto;
+  max-height: 520px; /* Giới hạn chiều cao tối đa */
+}
+
+/* Định dạng carousel inner */
+.carousel-inner {
+  border-radius: 4% !important;
+}
+
+/* Định dạng thông báo lỗi */
+#errorMessage {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: white;
+  color: red;
+  font-size: 16px;
+  border-radius: 10px;
+  z-index: 1000;
+  max-width: 300px;
+  text-align: center;
+}
+
+/* Định dạng danh sách lỗi */
+#errorMessage ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+#errorMessage ul li {
+  margin-bottom: 5px;
+}
+
+/* Media Queries cho màn hình nhỏ hơn */
+@media (max-width: 1024px) {
+  .form-body {
+    padding: 0; /* Loại bỏ padding để tránh tràn nội dung */
+  }
+
+  .form-container {
+    width: 100%; /* Chiếm 100% chiều rộng màn hình */
+    max-width: 90%; /* Đảm bảo container không tràn ra ngoài */
+    margin: 0 auto; /* Căn giữa container */
+  }
+
+  .title-form {
+    font-size: 10px; /* Điều chỉnh kích thước chữ cho màn hình nhỏ hơn */
+  }
+}
+
+@media (max-width: 768px) {
+  .form-body {
+    flex-direction: column; /* Sắp xếp theo cột trên màn hình nhỏ */
+    align-items: center; /* Căn giữa các phần tử con */
+    gap: 10px; /* Giảm khoảng cách giữa các phần tử trên màn hình nhỏ */
+  }
+
+  .form-container {
+    width: 90%; /* Chiếm 90% chiều rộng màn hình trên thiết bị nhỏ */
+  }
+
+  .carousel {
+    width: 100%;
+    max-width: 100%; /* Đảm bảo carousel chiếm 100% chiều rộng */
+  }
+
+  .d-block {
+    max-height: 1200px; /* Giới hạn chiều cao cho màn hình nhỏ hơn */
+  }
+}

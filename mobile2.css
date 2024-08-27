@@ -1,0 +1,15 @@
+@media screen and (max-width: 640px) {
+    .logo {
+        max-width: 150px; /* Set a maximum width for the logo on mobile screens */
+    }
+
+    .age-button {
+        font-size: 16px; /* Set a larger font size for buttons */
+        padding: 8px 16px; /* Adjust button padding */
+    }
+
+    .instruction {
+        font-size: 25px; /* Increase the font size of instruction text */
+        margin-top: 20px; /* Set top margin for instruction text */
+    }
+}

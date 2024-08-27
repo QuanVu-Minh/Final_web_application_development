@@ -1,0 +1,123 @@
+/* Apply a reset to all elements */
+* {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+  font-family: Arial, sans-serif; /* Use Arial font or fall back to sans-serif */
+}
+
+/* Style the body with a gradient background and white text */
+body {
+  background: linear-gradient(
+    90deg,
+    #002f8d,
+    #a018b6
+  ); /* Gradient background from blue to purple */
+  color: #fff; /* White text color */
+}
+
+/* Style the navigation bar */
+.navbar {
+  background-color: white; /* White background color for the navbar */
+  padding: 20px; /* Padding around navbar content */
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+  margin: 20px auto; /* Center horizontally with vertical margin */
+  max-width: 100%; /* Maximum width of 1300px */
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-around; /* Distribute items evenly */
+  align-items: center; /* Center items vertically */
+}
+
+/* Style for product item text on hover */
+.product-item p:hover {
+  font-weight: bold; /* Bold text on hover */
+}
+
+/* Style the navigation menu within the navbar */
+.nav-menu {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center items vertically */
+  justify-content: space-around; /* Distribute items evenly */
+  width: 100%; /* Full width of the navbar */
+}
+
+/* Style for individual navigation items */
+.nav-item {
+  color: #000; /* Black text color */
+  font-size: 18px; /* Font size of 18px */
+  cursor: pointer; /* Pointer cursor on hover */
+  padding: 10px 20px; /* Padding inside navigation items */
+  border-radius: 10px; /* Rounded corners */
+  text-decoration: none; /* Remove underline from links */
+}
+
+/* Hover effect and active state for navigation items */
+.nav-item:hover,
+.nav-item.active {
+  color: #ff3c3c; /* Red text color on hover or when active */
+  font-weight: bold; /* Bold text on hover or when active */
+}
+
+/* Style for home icon in the navbar */
+.home-icon {
+  width: 30px; /* Width of the home icon */
+  height: 30px; /* Height of the home icon */
+}
+
+/* Style for the content area */
+.content {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-around; /* Distribute items evenly */
+  padding-top: 80px; /* Padding on top */
+  padding-left: 20px; /* Padding on the left */
+  padding-right: 20px; /* Padding on the right */
+}
+
+/* Style for individual sections within content */
+.section {
+  width: 45%; /* Width of each section */
+  padding: 20px; /* Padding inside sections */
+  background-color: transparent; /* Transparent background */
+  border-radius: 10px; /* Rounded corners */
+  border: #000 solid 1px; /* Black border with 1px thickness */
+}
+
+/* Style for section headings */
+.section h2 {
+  text-align: center; /* Center align text */
+  background-color: white; /* White background color for headings */
+  color: black; /* Black text color */
+  padding: 10px; /* Padding inside headings */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 24px; /* Font size of 24px */
+}
+
+/* Style the product list within each section */
+.product-list {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack items vertically */
+  align-items: flex-start; /* Align items to the start of the container */
+  padding: 20px 0; /* Padding on top and bottom */
+  color: rgb(255, 255, 255); /* White text color */
+}
+
+/* Style for individual product items within the list */
+.product-item {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center items vertically */
+  margin-bottom: 20px; /* Margin below each product item */
+}
+
+/* Style for product images */
+.product-item img {
+  width: 60px; /* Width of product images */
+  height: 60px; /* Height of product images */
+  margin-right: 20px; /* Margin to the right of images */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Style for product names */
+.product-item p {
+  font-size: 18px; /* Font size of 18px */
+}

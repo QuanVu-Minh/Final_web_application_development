@@ -1,0 +1,73 @@
+/* styles.css */
+
+/* General styling for the body element */
+body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 100vh; /* Full viewport height */
+    background-color: #d12f29; /* Red background color */
+    font-family: 'Arial'; /* Use Arial font */
+}
+
+/* Center-align text and set text color for the container */
+.container {
+    text-align: center; /* Center-align text */
+    color: #fff; /* White text color */
+}
+
+/* Set maximum width for the logo image */
+.logo {
+    max-width: 200px; /* Adjust the logo size to a maximum of 200px wide */
+}
+
+/* Add margin above and below buttons */
+.buttons {
+    margin: 20px 0; /* Vertical margin of 20px */
+}
+
+/* Styling for age verification buttons */
+.age-button {
+    background-color: transparent; /* Transparent background */
+    border: 2px solid #fff; /* White border */
+    padding: 10px 20px; /* Padding inside the button */
+    margin: 0 10px; /* Horizontal margin of 10px */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size of 16px */
+    border-radius: 20px; /* Rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and text color changes */
+    color: #fff; /* White text color */
+    text-decoration: none; /* Remove underline from links */
+}
+
+/* Hover effect for the "Enough 18 year old" button */
+.age-button.enough:hover {
+    background-color: #7a1a16; /* Darker red background on hover */
+    color: #fff; /* White text color on hover */
+}
+
+/* Default styling for the "Under 18 year old" button */
+.age-button.under {
+    background-color: #f6b882; /* Beige background color */
+    color: #7a1a16; /* Dark red text color */
+}
+
+/* Hover effect for the "Under 18 year old" button */
+.age-button.under:hover {
+    background-color: #c8946d; /* Slightly darker beige on hover */
+    color: #7a1a16; /* Dark red text color on hover */
+}
+
+/* Styling for instruction text */
+.instruction {
+    font-size: 18px; /* Font size of 18px */
+    margin-top: 40px; /* Top margin of 40px */
+    font-style: italic; /* Italicize text */
+}
+
+/* Additional hover effect for all age verification buttons */
+.age-button:hover {
+    font-weight: bold; /* Bold text on hover */
+}

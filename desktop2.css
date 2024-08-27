@@ -1,0 +1,19 @@
+/* Apply styles for screens that are at least 1024px wide */
+@media screen and (min-width: 1024px) {
+    
+    /* Set a maximum width for the logo on larger screens */
+    .logo {
+        max-width: 300px; /* Larger logo for desktop */
+    }
+
+    /* Increase font size and padding for the age button on larger screens */
+    .age-button {
+        font-size: 18px;
+        padding: 15px 30px;
+    }
+
+    /* Increase font size for instruction text on larger screens */
+    .instruction {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,28 @@
+@media screen and (max-width: 640px) {
+  .navbar {
+    padding: 15px; /* Reduce padding for a tighter layout */
+    border-radius: 15px; /* Slightly smaller border radius */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for mobile */
+    margin: 10px; /* Reduce margin for better fit on small screens */
+    height: 167px;
+  }
+
+  .home-icon {
+    width: 30px; /* Smaller icon size */
+    height: 30px; /* Ensure height matches width */
+  }
+
+  .nav-item {
+    font-size: 25px; /* Slightly smaller font size */
+    padding: 8px 15px; /* Adjust padding to fit smaller screen */
+    text-decoration: none;
+  }
+
+  .content {
+    padding-top: 50px; /* Adjust top padding for mobile header */
+  }
+
+  .content p {
+    font-size: 18px; /* Adjust font size for readability on mobile */
+  }
+}

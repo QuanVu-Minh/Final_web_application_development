@@ -1,0 +1,42 @@
+@media screen and (min-width: 1024px) {
+    
+    /* Align items horizontally in the main container */
+    .main-container {
+        flex-direction: row; /* Align items horizontally */
+    }
+    
+    /* Set a maximum width for the navbar on larger screens, and align its items */
+    .navbar {
+        max-width: 2000px; /* Ensure maximum horizontal size */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    /* Increase font size for navigation items on larger screens */
+    .nav-item {
+        font-size: 25px;
+    }
+
+    /* Set width and height for the home icon on larger screens */
+    .home-icon {
+        width: 100px;
+        height: 100px;
+    }
+
+    /* Set the main content to occupy 35% of the main container's width */
+    .main-content {
+        flex: 35%; /* Occupies 35% of .main-container width */
+    }
+
+    /* Set the .as element to occupy 60% of the main container's width and increase font size */
+    .as {
+        flex: 60%; /* Occupies 60% of .main-container width */
+        font-size: 25px;
+    }
+
+    /* Increase font size for paragraphs within the avatar class */
+    .avatar p {
+        font-size: 25px;
+    } 
+}

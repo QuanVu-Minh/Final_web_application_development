@@ -1,0 +1,16 @@
+/* Apply styles for screens with a maximum width of 768px (mobile devices) */
+@media (max-width: 768px) {
+    .logo {
+        max-width: 150px; /* Set a smaller maximum width for the logo on mobile */
+    }
+
+    .age-button {
+        font-size: 14px; /* Decrease the font size of buttons */
+        padding: 8px 16px; /* Adjust padding for buttons */
+    }
+
+    .instruction {
+        font-size: 16px; /* Decrease font size of the instruction text */
+        margin-top: 20px; /* Reduce top margin for instructions */
+    }
+}
